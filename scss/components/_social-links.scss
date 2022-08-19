@@ -43,6 +43,11 @@ social-links team list
     display: flex;
 }
 .social-links {
+    @media screen and (max-width:767px) {
+            align-items: center;
+            margin-bottom: 60px;
+    
+        }
     display: flex;
     flex-direction: column;
     justify-content: center;

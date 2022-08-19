@@ -1,5 +1,29 @@
+.about.section {
+    @media screen and (max-width:768px){
+            display: none;
+    
+        }
+
+}
 .about-list {
-    display: flex;
+    @media screen and (min-width:1200px)  {
+        display: flex;
+        
+    }
+}
+
+.about-subtitle {
+
+    @media screen and (min-width:1200px)  {
+        display: block;
+        color: var(--title-text-color);
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.17;
+        text-align: center;
+        letter-spacing: 0.03em;
+        margin-bottom: 50px;
+    }
 }
 
 .about-list__item {

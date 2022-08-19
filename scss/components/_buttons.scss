@@ -19,15 +19,28 @@
   }
 }
 .button-list {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
-}
+    flex-wrap:wrap ;
+    @media screen and (min-width:768px) {
+            display: flex;
+                justify-content: center;
+                margin-bottom: 30px;}
+     @media screen and (min-width:1200px) {
+            margin-bottom: 50px;      }
+    }
+   
+
 .button-list__btn {
+    display: inline-block;
     margin-right: 8px;
+    margin-top: 15px;
+    @media screen and (min-width:768px) {
+            
+        }
+    
 }
 .button-list__btn:last-child {
     margin-right: 0;
+    margin-bottom: 15px;
 }
 .button--current {
     background-color: var(--accent-color);

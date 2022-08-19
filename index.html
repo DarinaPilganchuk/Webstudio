@@ -12,6 +12,7 @@
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
 
 </head>
 
@@ -20,6 +21,11 @@
         <div class="container">
             <nav class="nav">
                 <a class="logo-link link" href="WebStudio"><span class=" logo-accent">Web</span>Studio</a>
+                <button class="menu-btn" type="button" data-menu-open>
+                    <svg class="" width="40" height="40">
+                        <use href="./images/icons.svg#burger-menu"></use>
+                    </svg>
+                </button>
                 <ul class="menu-nav header-container list">
                     <li class="menu-nav__item "><a href="Студия"
                             class="menu-nav__link menu-nav__link--current link">Студія</a>
@@ -107,20 +113,26 @@
         </section>
         <section class="about section">
             <div class="container">
-                <h2 class="section-subtitle">Чим ми займаємось</h2>
+                <h2 class="about-subtitle">Чим ми займаємось</h2>
                 <ul class="about-list list">
-                    <li class="about-list__item"><img src="./images/img.jpg" alt="декстопні додатки" width="370">
+                    <li class="about-list__item"><img
+                            srcset="./images/about/img.jpg 1x, ./images/about/img@2x_bg.jpg 2x"
+                            src="./images/about/img.jpg" alt="декстопні додатки" width="370">
                         <div class="about-list__label">
                             <h3 class="about-list__label-text">Десктопні додатки</h3>
                         </div>
                     </li>
 
-                    <li class="about-list__item"><img src="./images/img1.jpg" alt="мобільні додатки" width="370">
+                    <li class="about-list__item">
+                        <img srcset="./images/about/img1.jpg 1x, ./images/about/img1@2x_bg.jpg 2x"
+                            src="./images/about/img1.jpg" alt="мобільні додатки" width="370">
                         <div class="about-list__label">
                             <h3 class="about-list__label-text">Мобільні додатки</h3>
                         </div>
                     </li>
-                    <li class="about-list__item"><img src="./images/img2.jpg" alt="дизайнерські рішення" width="370">
+                    <li class="about-list__item"><img
+                            srcset="./images/about/img2.jpg 1x, ./images/about/img-a@2x_sm.jpg 2x"
+                            src="./images/about/img2.jpg" alt="дизайнерські рішення" width="370">
                         <div class="about-list__label">
                             <h3 class="about-list__label-text">Дизайнерські рішення</h3>
                         </div>
@@ -133,7 +145,9 @@
                 <h2 class="section-subtitle">Наша команда</h2>
                 <ul class="team-list list">
                     <li class="team-list__item">
-                        <img src="./images/igde.jpg" alt="член команды Игорь Демьяненко" width="270">
+                        <img srcset="./images/team/img-1@1x.jpg 270w, ./images/team/img-1@1x_lg.jpg 354w, ./images/team/img-1@1x_sm.jpg 450w, ./images/team/img-1@2x_bg.jpg 540w, ./images/team/img-1@2x_lg.jpg 708w, ./images/team/img-1@2x_sm.jpg 900w"
+                            sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 100vw"
+                            src="./images/team/img-1@1x.jpg" alt="член команды Игорь Демьяненко" width="450">
                         <div class="card-member">
                             <h3 class="card-member__name">Ігор Дем'яненко</h3>
                             <p class="card-member__pos">Product Designer</p>
@@ -159,7 +173,9 @@
                     </li>
 
                     <li class="team-list__item">
-                        <img src="./images/olre.jpg" alt="член команды Ольга Репина" width="270">
+                        <img srcset="./images/team/img-2@1x.jpg 270w, ./images/team/img-2@1x_lg.jpg 354w, ./images/team/img-2@1x_sm.jpg 450w, ./images/team/img-2@2x_bg.jpg 540w, ./images/team/img-2@2x_lg.jpg 708w, ./images/team/img-2@2x_sm.jpg 900w"
+                            sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 100vw"
+                            src="./images/team/img-2@1x.jpg" alt="член команды Ольга Репина" width="450">
                         <div class="card-member">
                             <h3 class="card-member__name">Ольга Рєпіна</h3>
                             <p class="card-member__pos">Frontend Developer</p>
@@ -185,7 +201,9 @@
                     </li>
 
                     <li class="team-list__item">
-                        <img src="./images/ntar.jpg" alt="член команды Николай Тарасов" width="270">
+                        <img srcset="./images/team/img-3@1x.jpg 270w, ./images/team/img-3@1x_lg.jpg 354w, ./images/team/img-3@1x_sm.jpg 450w, ./images/team/img-3@2x_bg.jpg 540w, ./images/team/img-3@2x_lg.jpg 708w, ./images/team/img-3@2x_sm.jpg 900w"
+                            sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 100vw"
+                            src="./images/team/img-3@1x.jpg" alt="член команды Николай Тарасов" width="450">
                         <div class="card-member">
                             <h3 class="card-member__name">Микола Тарасов</h3>
                             <p class="card-member__pos">Marketing</p>
@@ -211,7 +229,9 @@
                     </li>
 
                     <li class="team-list__item">
-                        <img src="./images/mer.jpg" alt="член команды Михаил Ермаков" width="270">
+                        <img srcset="./images/team/img-4@1x.jpg 270w, ./images/team/img-4@1x_lg.jpg 354w, ./images/team/img-4@1x_sm.jpg 450w, ./images/team/img-4@2x_bg.jpg 540w, ./images/team/img-4@2x_lg.jpg 708w, ./images/team/img-4@2x_sm.jpg 900w"
+                            sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 100vw"
+                            src="./images/team/img-4@1x.jpg" alt="член команды Михаил Ермаков" width="450">
                         <div class="card-member">
                             <h3 class="card-member__name">Михайло Єрмаков</h3>
                             <p class="card-member__pos">UI Designer</p>
@@ -239,6 +259,7 @@
             </div>
 
         </section>
+
         <section class="section-clients">
             <div class="container">
                 <h2 class="section-subtitle">Постійні клієнти</h2>
@@ -284,7 +305,7 @@
                 <address class="address">
                     м. Київ, пр-т Лесі Українки, 26 <br>
                     <a class="email-link link" href="mailto:info@example.com">info@example.com <br></a>
-                    <a class="phone-link link" href="tel:+380991111111">+380991111111</a>
+                    <a class="phone-link link" href="tel:+380991111111">+38 096 111 11 11</a>
                 </address>
             </div>
             <div class="social-links">
@@ -323,8 +344,8 @@
                 </div>
             </form>
         </div>
+
     </footer>
-    <!--modal-window-->
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button class="modal__btn" data-modal-close>
@@ -374,7 +395,43 @@
             </form>
         </div>
     </div>
+    <div class="modal-mobile-menu">
+        <div class="mobile-menu" data-menu>
+            <div class="menu-container" id="mobile-menu">
+                <button class="menu-btn-close" type="button" data-menu-close>
+                    <svg class="menu__close-icon" width="40" height="40">
+                        <use href="./images/icons.svg#menu-close"></use>
+                    </svg>
+                </button>
+                <ul class="mobile-list list">
+                    <li class="mobile-list__item"><a href="./index.html"
+                            class="mobile-link link link--current ">Студія</a></li>
+                    <li class="mobile-list__item"><a href="./portfolio.html" class="mobile-link link">Портфоліо</a></li>
+                    <li class="mobile-list__item"><a href="" class="mobile-link link">Контакти</a></li>
+                </ul>
+
+                <ul class="mobile-contacts list">
+                    <li class="mobile-contacts__item"><a class="mobile-contacts__link link" href="+380961111111">
+                            +38 096 111 1111</a></li>
+                    <li class="mobile-contacts__item "><a class="mobile-contacts__link link" href="info@devstudio.com">
+                            info@devstudio.com</a>
+                    </li>
+                </ul>
+                <ul class="mobile-socials list">
+                    <li class="mobile-socials__item"><a class="mobile-socials__link link" href="Instagram">Instagram</a>
+                    </li>
+                    <li class="mobile-socials__item"><a class="mobile-socials__link link" href="Twitter">Twitter</a>
+                    </li>
+                    <li class="mobile-socials__item"><a class="mobile-socials__link link" href="Facebook">Facebook</a>
+                    </li>
+                    <li class="mobile-socials__item"><a class="mobile-socials__link link" href="LinkedIn">Linkedin</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>
