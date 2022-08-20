@@ -1,7 +1,7 @@
 .features-section {
+    
     padding-top: 60px;
     
-
  @media screen and (min-width:1200px) {
          padding-top: 94px;
      }
@@ -25,8 +25,10 @@
     justify-content: center;
 
     @media screen and (min-width:768px) and (max-width:768px) {
-            margin:-15px;
-            margin-bottom: 60px;
+           
+        margin:-15px;
+        margin-bottom: 60px;
+
         }
 
     @media screen and (min-width:1200px){
@@ -42,6 +44,7 @@
 
 
 .features-list__item {
+    margin-bottom: 30px;
     margin-right: auto;
     margin-left: auto;
     align-items: center;
@@ -55,7 +58,11 @@
     }
     
 }
-
+.features-list__item:last-child{
+@media screen and (max-width:767px) {
+    margin-bottom: 60px;
+    }
+}
 
 
 

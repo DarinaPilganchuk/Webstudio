@@ -1,15 +1,17 @@
 .modal {
     position: relative;
     width: 450px;
-    
+    min-height: 609px;
     background-color: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     padding: 40px;
+    
 
     @media screen and (min-width:1200px) {
             width: 528px;
             min-height: 581px;
+    
         }
 }
 
@@ -337,6 +339,8 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.2);
     transition: opacity 250ms ease-out, visibility 250ms ease-out;
+    
+
 }
 
 .backdrop.is-hidden {
