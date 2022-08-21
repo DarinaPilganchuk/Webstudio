@@ -70,6 +70,10 @@
     padding: 0 0;
     margin-bottom: 20px;
     // display: flex;
+    @media screen and (min-width:1200px) {
+            text-align: start;
+    
+        }
 }
 
 .form-subscription__btn {
