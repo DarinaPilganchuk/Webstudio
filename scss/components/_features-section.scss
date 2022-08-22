@@ -1,5 +1,5 @@
 .features-section {
-    
+    padding-bottom: 60px;
     padding-top: 60px;
     
  @media screen and (min-width:1200px) {
@@ -27,7 +27,7 @@
     @media screen and (min-width:768px) and (max-width:1199px) {
            
         margin:-15px;
-        margin-bottom: 45px;
+        // margin-bottom: 45px;
 
         }
 
@@ -59,11 +59,11 @@
     }
     
 }
-.features-list__item:last-child{
-@media screen and (max-width:767px) {
-    margin-bottom: 60px;
-    }
-}
+// .features-list__item:last-child{
+// @media screen and (max-width:767px) {
+//     margin-bottom: 60px;
+//     }
+// }
 
 
 

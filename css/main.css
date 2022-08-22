@@ -942,8 +942,10 @@ body {
 .button-list__btn {
   display: inline-block;
   margin-right: 8px;
+  margin-top: 15px;
 }
 .button-list__btn:last-child {
+  margin-bottom: 15px;
   margin-right: 0;
 }
 
@@ -979,6 +981,7 @@ body {
 }
 
 .features-section {
+  padding-bottom: 60px;
   padding-top: 60px;
 }
 @media screen and (min-width: 1200px) {
@@ -1012,7 +1015,6 @@ body {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .features-list.list {
     margin: -15px;
-    margin-bottom: 45px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1045,12 +1047,6 @@ body {
     display: inline-block;
     width: calc((100% - 90px) / 2);
     margin: 15px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .features-list__item:last-child {
-    margin-bottom: 60px;
   }
 }
 
