@@ -266,6 +266,7 @@ body {
 @media screen and (min-width: 1200px) {
   .address {
     margin-right: 70px;
+    margin-bottom: 0;
   }
 }
 
@@ -565,6 +566,10 @@ body {
   gap: 9px;
   margin-left: 25px;
   margin-bottom: 30px;
+}
+
+.form-agreement-tx {
+  color: #2196F3;
 }
 
 .register-form__text {
@@ -937,11 +942,9 @@ body {
 .button-list__btn {
   display: inline-block;
   margin-right: 8px;
-  margin-top: 15px;
 }
 .button-list__btn:last-child {
   margin-right: 0;
-  margin-bottom: 15px;
 }
 
 .button--current {
@@ -1009,7 +1012,7 @@ body {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .features-list.list {
     margin: -15px;
-    margin-bottom: 60px;
+    margin-bottom: 45px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1017,6 +1020,7 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin: -15px;
   }
 }
 
@@ -1164,7 +1168,7 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin: 0;
+    margin: -15px;
   }
 }
 
@@ -1312,14 +1316,19 @@ social-links team list
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 100px;
+  margin-bottom: 60px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .social-links {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-bottom: 60px;
+    margin-bottom: 100px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .social-links {
+    margin-bottom: 0;
   }
 }
 
