@@ -48,12 +48,14 @@ social-links team list
         justify-content: center;
         margin-bottom: 60px;
         align-items: center;
+
     @media screen and (min-width:768px) and (max-width: 1199px) {
             margin-bottom: 100px;
         }
 
         @media screen and (min-width: 1200px) {
             margin-bottom: 0;
+            align-items: flex-start;
         }
     
     
